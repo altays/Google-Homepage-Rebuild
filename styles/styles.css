@@ -1,0 +1,69 @@
+/* base */
+
+html {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height:1.5;
+    color: #111111;
+    overflow-y:hidden;
+}
+
+a{
+    cursor: pointer;
+    color: currentColor;
+    text-decoration: none;
+}
+
+/* shared */
+
+.body-container,
+.footer-container,
+.nav-container {
+    display:flex;
+}
+
+
+
+/* specific */
+
+.body-container {
+    /* flow = row, center of page */
+    font-size: 1.5rem;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 95vh
+}
+
+.fas.fa-search {
+    /* position to the left of the search bar */
+}
+
+.fas.fa-microphone {
+    /* position to the right of the search bar */
+}
+
+.footer-container {
+    /* flow row, space around */
+    font-size: 1.2rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: end;
+    height: 2.5vh;
+}
+
+.nav-container {
+    /* flow row, space around */
+    font-size: 1.2rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: start;
+    height: 2.5vh;
+}
+
+
+/* psuedoclasses */
+
+.form-buttons input {
+   font-size: 1.2rem;
+}
