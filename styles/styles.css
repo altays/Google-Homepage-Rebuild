@@ -4,35 +4,38 @@ html {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height:1.5;
-    color: #111111;
+    color: #666666;
     overflow-y:hidden;
 }
 
 a{
-    cursor: pointer;
     color: currentColor;
     text-decoration: none;
+    cursor: pointer;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
 /* shared */
 
 .body-container,
 .footer-container,
 .nav-container {
     display:flex;
+    /* consider making just one container, making each of these the children */
 }
-
 
 
 /* specific */
 
 .body-container {
-    /* flow = row, center of page */
     font-size: 1.5rem;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    height: 95vh
+    height: 85vh;
 }
 
 .fas.fa-search {
@@ -41,29 +44,77 @@ a{
 
 .fas.fa-microphone {
     /* position to the right of the search bar */
+    cursor: pointer;
+}
+
+.fas.fa-th {
+    /* color: currentColor; */
 }
 
 .footer-container {
-    /* flow row, space around */
     font-size: 1.2rem;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: end;
-    height: 2.5vh;
+    align-items: center;
+    height: 7vh;
+    background-color: #EFEFEF;
 }
 
-.nav-container {
-    /* flow row, space around */
-    font-size: 1.2rem;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: start;
-    height: 2.5vh;
+.footer-container-links-left {
+    /* left and right margin / padding */
 }
 
-
-/* psuedoclasses */
+.footer-container-links-right {
+    /* left and right margin / padding */
+}
 
 .form-buttons input {
    font-size: 1.2rem;
+   /* need to style */
+}
+
+.form-search input {
+    /* set size */
+    cursor: text;
+}
+
+i {
+    text-decoration: none;
+    
+}
+
+.nav-container {
+    font-size: 1.2rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+
+.nav-container-links-left{
+    /* margin and padding */
+}
+
+.nav-container-links-right{
+    /* margin and padding */
+}
+
+/* psuedo elements */
+
+.fas.fa-th:hover {
+    /* on hover, turn to black */
+    color: black;
+}
+
+.form-buttons input:hover {
+    /* change font color to black and add a border */
+ }
+ 
+.form-search input:hover {
+    /* set box shadow, transform to be larger */
+    
+}
+
+.text-anchor:hover {
+   text-decoration: underline;
 }
