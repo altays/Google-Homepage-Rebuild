@@ -4,7 +4,7 @@ html {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height:1.5;
-    color: #666666;
+    color: #646464;
     overflow-y:hidden;
 }
 
@@ -18,24 +18,35 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 /* shared */
 
-.body-container,
-.footer-container,
-.nav-container {
-    display:flex;
-    /* consider making just one container, making each of these the children */
+button,
+.form-buttons input{
+    border: none;
+    text-align: center;
 }
 
+i {
+    text-decoration: none; 
+    font-size: .8rem;  
+}
+
+img, 
+.form-search {
+    font-size: .7rem;
+    margin-bottom: 2rem;
+}
 
 /* specific */
 
 .body-container {
     font-size: 1.5rem;
+    display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    padding-top: 11.2rem;
 }
 
 .fas.fa-search {
@@ -47,17 +58,15 @@ body {
     cursor: pointer;
 }
 
-.fas.fa-th {
-    /* color: currentColor; */
-}
-
 .footer-container {
-    font-size: 1.2rem;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 7vh;
+    font-size: .8rem;
     background-color: #EFEFEF;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 4.5vh;
 }
 
 .footer-container-links-left {
@@ -69,50 +78,55 @@ body {
 }
 
 .form-buttons input {
-   font-size: 1.2rem;
-   /* need to style */
+    border-radius: 3px;
+    background-color: #efefef;
+    color: #5F5F5F;
+    padding: 8px 15px;
 }
 
 .form-search input {
-    /* set size */
     cursor: text;
+    width: 100%;
 }
 
-i {
-    text-decoration: none;
-    
+.sign-in {
+    background-color: rgb(67, 135, 253);
+    color: white;
+    padding: 5px 10px;
 }
 
 .nav-container {
-    font-size: 1.2rem;
-    flex-flow: row wrap;
+    font-size: .7rem;
+    display: flex;
     justify-content: space-between;
+    padding: 11px 20px;
     align-items: center;
-    height: 8vh;
 }
 
-.nav-container-links-left{
-    /* margin and padding */
+.nav-container-links-left > a{
+    margin-right: 9px
 }
 
-.nav-container-links-right{
-    /* margin and padding */
+.nav-container-links-right > a{
+    margin-left: 15px
 }
 
 /* psuedo elements */
 
+
 .fas.fa-th:hover {
-    /* on hover, turn to black */
     color: black;
 }
 
 .form-buttons input:hover {
-    /* change font color to black and add a border */
+    color: black;
+    background-color: #F3F3F3;
+    box-shadow: 0px 0px 1px #000; 
  }
  
 .form-search input:hover {
-    /* set box shadow, transform to be larger */
-    
+    /* need to mess with shadow */
+    box-shadow: 0px 1px 10px #DDD 
 }
 
 .text-anchor:hover {
