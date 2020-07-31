@@ -2,8 +2,8 @@
 
 html {
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height:1.5;
+    font-size: 13px;
+    line-height:24px;
     color: #646464;
     overflow-y:hidden;
 }
@@ -34,7 +34,7 @@ i {
 
 img, 
 .form-search {
-    margin-bottom: 26px;
+    margin-bottom: 27px;
 }
 
 .form-search {
@@ -52,7 +52,7 @@ img,
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 9.3rem;
+    padding-top: 10.4rem;
 }
 
 .fas.fa-search {
@@ -71,24 +71,24 @@ img,
 }
 
 .footer-container {
-    font-size: .8rem;
+    font-size: 1.1rem;
     background-color: #EFEFEF;
     position: absolute;
-    bottom: 0px;
+    bottom: -1px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     height: 4.4vh;
     align-items:center;
-    padding: 9px 25px;
+    padding:17px 30px;
 }
 
 .footer-container-links-left > a {
-    margin-right: 15px;
+    margin-right: 22px;
 }
 
 .footer-container-links-right > a {
-    margin-left:15px;
+    margin-left:22px;
 }
 
 form {
@@ -100,45 +100,48 @@ form {
 .form-buttons input {
     border-radius: 3px;
     background-color: #efefef;
-    color: #5F5F5F;
-    padding: 10px 30px;
+    color: #6F6F6F;
+    padding: 7px 14px;
+    font-size: 1.1rem;
+    margin-top: -2px;
 }
 
 .form-search > input {
-    border: 1px solid grey;
+    border: 1px solid #dddddd;
     border-radius: 1000px;
     height: 5vh;
     width: 491px;
-    min-width: 100%;
+    min-width: 50%;
     padding: 2px 23px 2px 30px;
-    background-color: #fdfdfd;
+    background-color: #fefefe;
     cursor: pointer;
 }
 
 .sign-in {
     background-color: rgb(67, 135, 253);
     color: white;
-    padding: 5px 10px;
+    padding: 7px 14px;
     font-weight:700;
 }
 
 .nav-container {
-    font-size: .8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size:1rem;
+    margin-top:-2px;
 }
 
 .nav-container-links-left{
-    padding: 17px 25px;
+    padding: 18px 25px;
 }
 
 .nav-container-links-left > a{
-    margin-right: 11px
+    margin-right: 15px
 }
 
 .nav-container-links-right{
-    padding: 15px 30px;
+    padding: 17px 30px;
 }
 
 .nav-container-links-right > a{
@@ -155,11 +158,12 @@ form {
 .form-buttons input:hover {
     color: black;
     background-color: #F3F3F3;
-    box-shadow: 0px 0px 0px #000; 
+    box-shadow: 0px 0px 1px #000; 
  }
  
 .form-search input:hover {
     box-shadow: 0px 1px 10px #DDD 
+    
 }
 
 .text-anchor:hover {
